@@ -10,7 +10,7 @@ $(document).ready(function() {
   $('body').on('click', '.btn-delete-task', deleteTask);
 });
 
-var api_key = 'sEcr3t-4pIK3y';
+var api_key = 'LquBV3rktvve9LOvabad8HpLxzDP-wYL';
 
 // Task functions
 function getTasks() {
@@ -38,7 +38,7 @@ function addTask() {
   var is_urgent = $('#is_urgent').val();
 
   $.ajax({
-    url: 'https://api.mlab.com/api/1/databases/task_manager/collections/tasks?apiKey=' + api_key,
+    url: 'https://api.mlab.com/api/1/databases/passportfb/collections/users?apiKey=' + api_key,
     data: JSON.stringify({
       "task_name": task_name,
       "category": category,
